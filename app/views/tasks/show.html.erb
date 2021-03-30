@@ -1,0 +1,8 @@
+<h3><%= @task.title %></h3>
+ <p><%= @task.details %></p>
+ <p><%= @task.completed %></p>
+
+
+<p><%= link_to 'Back Home', tasks_path  %> |
+<%= link_to 'Edit', edit_task_path(@task)  %> |
+<%= link_to 'Delete', task_path(@task), method: :delete, data: { confirm: 'Are you sure?' }  %></p>
